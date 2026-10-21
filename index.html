@@ -14,6 +14,22 @@
   gtag('js', new Date());
   gtag('config', 'AW-18158605332');
 </script>
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18158605332/VSe1CN23_KQdEJSo2dJD',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <style>
 :root{
   --black:#0c0d10; --near-black:#141518; --page-bg:#ffffff; --fixed-white:#ffffff; --off:#f4f4f3;
@@ -329,8 +345,8 @@ footer a:hover{color:var(--fixed-white);}
         <h4>Horário</h4>
         <p>Guincho — emergência: 24 horas, todos os dias.<br>Comercial e orçamentos: seg. a sáb., 8h às 18h.</p>
         <h4>Contato</h4>
-        <a href="https://wa.me/5511992661787" target="_blank" rel="noopener">(11) 99266-1787</a>
-        <a href="https://wa.me/5511993537881" target="_blank" rel="noopener">(11) 99353-7881</a>
+        <a href="https://wa.me/5511992661787" target="_blank" rel="noopener" onclick="gtag_report_conversion()">(11) 99266-1787</a>
+        <a href="https://wa.me/5511993537881" target="_blank" rel="noopener" onclick="gtag_report_conversion()">(11) 99353-7881</a>
         <a href="https://instagram.com/conectaguinchos" target="_blank" rel="noopener">@conectaguinchos</a>
       </div>
     </div>
@@ -342,8 +358,8 @@ footer a:hover{color:var(--fixed-white);}
     <h2>Precisa de reboque agora?</h2>
     <p>Emergência 24h para leve e pesado, ou proposta de atendimento recorrente para sua empresa.</p>
     <div class="cta-actions">
-      <a class="btn btn-white" href="https://wa.me/5511992661787" target="_blank" rel="noopener">(11) 99266-1787</a>
-      <a class="btn btn-outline-dark" href="https://wa.me/5511993537881" target="_blank" rel="noopener">(11) 99353-7881</a>
+      <a class="btn btn-white" href="https://wa.me/5511992661787" target="_blank" rel="noopener" onclick="gtag_report_conversion()">(11) 99266-1787</a>
+      <a class="btn btn-outline-dark" href="https://wa.me/5511993537881" target="_blank" rel="noopener" onclick="gtag_report_conversion()">(11) 99353-7881</a>
     </div>
   </div>
 </section>
